@@ -61,4 +61,7 @@ body {
     .key {
         width: 50vw;
     }
+    .keys {
+        height: 90vh;
+    }
 }
