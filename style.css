@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 125%;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.keys {
+    background: linear-gradient(to bottom, rgba(57, 36, 14, 0.4), rgba(3, 0, 0, 0.9)),
+    url("./img/CalebOquendo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.key {
+    color: antiquewhite;
+    font-size: 3rem;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid antiquewhite;
+    padding: 5px 0 10px 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    text-shadow: 0 0 5px black;
+    transition: all 0.3s;
+}
+
+.key:hover {
+    cursor: pointer;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: chocolate;
+    box-shadow: 0 0 10px chocolate;
+}
+
+.sound {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: chocolate;
+}
+
+
+
+@media all and (max-width: 800px) {
+    .keys {
+        flex-direction: column;
+    }
+    .key {
+        width: 50vw;
+    }
+}
